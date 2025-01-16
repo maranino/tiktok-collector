@@ -3,6 +3,7 @@ import os
 import subprocess
 
 from dotenv import load_dotenv
+import imageio_ffmpeg as ffmpeg
 
 
 def extract_urls(json_file):
@@ -23,11 +24,10 @@ def extract_urls(json_file):
 def main():
     # ensure ffmeg is installed, if not exit with message to user.
     try:
-        subprocess.run(["ffmpeg", "-version"], stdout=subprocess.PIPE, stderr=subprocess.PIPE, check=True)
-    except FileNotFoundError:
-        print("ffmpeg is not installed. Please install ffmpeg before running this script.")
+        ffmpeg.get_ffmpeg_exe()
+    except RuntimeError:
+        print("ffmpeg is not installed. Please ensure you ran 'pip install -r requirements.txt")
         return
-
 
     # Load settings.cfg into the os environment
     load_dotenv("settings.cfg")
