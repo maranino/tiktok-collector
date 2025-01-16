@@ -27,9 +27,9 @@ Reference Image
 Assuming you have Python 3 installed and it is available in your PATH.
 
 
-In your terminal (Powershell, Command Prompt, etc.) run the following command:
+In your terminal (Powershell, Bash, etc) run the following command:
 
-### Windows Users
+### Windows Users using Powershell
 Copy, paste, and run each line below in order. Each command needs to run separately.
 
 ```
@@ -37,7 +37,7 @@ python -m venv .venv
 ```
 
 ```
-.venv\Scripts\activate.bat
+.venv\Scripts\activate
 ```
 
 
