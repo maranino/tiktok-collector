@@ -1,5 +1,12 @@
-# tiktok-collector
+# TikTok Collector
 A Python script that automates the downloading of a given public collection.
+
+> **DISCLOSURE:** This tool exists primarily so content creators who want to gather all THEIR OWN content into an organized folder. Since TikTok does not provide a meaningful way for users to retrieve their videos like other social platforms this tool visits the collection url to download the content and tag it with the same title, username, and likes count.
+> This code in this repo heavily leans into preexisting scraping library that can already scrape every popular social platform.
+>
+> **USE AT YOUR OWN RISK**: It is also worth noting that running scrapers may be against Terms of Service (ToS) even though TikTok may no longer exist sometime in the future. The existence of this code repository doesn't directly violate any ToS but running this tool against their endpoints would directly violate their ToS.
+>
+> If TikTok provides a reasonable way for content creators to download their videos or ends up sticking around beyond 2025-01-19, I am willing to remove this repo.
 
 
 ## Prerequisites
